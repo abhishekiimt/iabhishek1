@@ -16,6 +16,8 @@ const ExamplePages = () => {
                     <div className=" hover:mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
+                        height='100%'
+                        width='100%'
                         className="align-middle border-none max-w-full h-auto rounded-lg"
                         src="/img2.png"
                       />
@@ -31,6 +33,8 @@ const ExamplePages = () => {
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
+                        height='100%'
+                        width='100%'
                         className="align-middle border-none max-w-full h-auto rounded-lg"
                         src="/img2.png"
                       />
@@ -46,6 +50,8 @@ const ExamplePages = () => {
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
+                        height='100%'
+                        width='100%'
                         className="align-middle border-none max-w-full h-auto rounded-lg"
                         src="/img2.png"
                       />

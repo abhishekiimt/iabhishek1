@@ -27,6 +27,8 @@ const Intro = () => {
               <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-700">
                 <img
                   alt="..."
+                  height='100%'
+                  width='100%'
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                   className="w-full align-middle rounded-t-lg"
                 />
@@ -360,6 +362,8 @@ const Intro = () => {
             <div className="w-full md:w-6/12 mr-auto px-4 pt-24 md:pt-0">
               <img
                 alt="..."
+                height='100%'
+                width='100%'
                 className="max-w-full rounded-lg shadow-xl"
                 style={{
                   transform:

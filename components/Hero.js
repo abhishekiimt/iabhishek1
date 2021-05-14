@@ -39,6 +39,8 @@ const Hero = () => {
           <img
             className="object-cover object-center rounded"
             alt="hero"
+            height='100%'
+            width='100%'
             style={{
               transform:
                 "scale(1) perspective(1040px) rotateY(9deg) rotateX(1deg) rotate(1deg)",
