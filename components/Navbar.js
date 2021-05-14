@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className='w-screen h-20 bg-gray-800'>
       <nav className="flex items-center flex-wrap bg-gray-800 p-3 ">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
@@ -47,7 +47,7 @@ const Navbar = () => {
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
-            active ? "block" : "hidden"
+            active ? "" : "hidden"
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
