@@ -32,7 +32,7 @@ const Hero = () => {
             </svg>
             <span className="pl-2 text-sm">New Ashok Nagar, Delhi 110096</span>
           </p>
-          <p className="mb-4 flex justify-center">
+          <p className="flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6 text-blue-600"
@@ -49,7 +49,7 @@ const Hero = () => {
             </svg>
             <span className="pl-3">iabhishekn98@gmail.com</span>
           </p>
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center m-8">
             <button className=" text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               <a
                 href="/iabhi.pdf"
