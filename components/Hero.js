@@ -30,9 +30,9 @@ const Hero = () => {
                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
               />
             </svg>
-            <span className="pl-2 text-sm">New Ashok Nagar, Delhi 110096</span>
+            <span className="pl-2">New Ashok Nagar, Delhi 110096</span>
           </p>
-          <p className="flex justify-center">
+          <p className="mb-4 flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6 text-blue-600"
@@ -49,7 +49,7 @@ const Hero = () => {
             </svg>
             <span className="pl-3">iabhishekn98@gmail.com</span>
           </p>
-          <div className="flex justify-center m-8">
+          <div className="flex justify-center">
             <button className=" text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               <a
                 href="/iabhi.pdf"
