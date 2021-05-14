@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" bg-gray-800 top-0 p-3 h-20 fixed w-screen z-10">
+    <div className=" bg-gray-800 fixed top-0 w-screen z-10 p-3">
       <nav className="flex items-center flex-wrap max-w-7xl mx-auto">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
