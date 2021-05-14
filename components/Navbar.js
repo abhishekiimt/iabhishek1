@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" bg-gray-800 fixed top-0 w-screen z-10 p-3">
+    <div className="bg-gray-800 p-3 h-20 ">
       <nav className="flex items-center flex-wrap max-w-7xl mx-auto">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
@@ -28,7 +28,7 @@ const Navbar = () => {
               />
             </svg>
 
-            <span className="text-2xl text-white font-bold tracking-wide">
+            <span className="text-3xl text-white font-bold tracking-wide">
               iAbhishek
             </span>
           </a>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 Projects
               </a>
             </Link>
-            <Link href="#about">
+            <Link href="/">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-900 hover:text-white">
                 About us
               </a>
