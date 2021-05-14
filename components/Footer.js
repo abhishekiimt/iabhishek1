@@ -73,6 +73,7 @@ export default function Footer() {
                       <a
                         className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
                         href="#"
+                        
                       >
                         About Us
                       </a>
@@ -81,6 +82,7 @@ export default function Footer() {
                       <a
                         className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
                         href="#"
+                        target="_blank"
                       >
                         Blog
                       </a>
@@ -89,6 +91,7 @@ export default function Footer() {
                       <a
                         className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
                         href="https://github.com/abhishekiimt"
+                        target="_blank"
                       >
                         Github
                       </a>

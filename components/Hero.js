@@ -15,32 +15,62 @@ const Hero = () => {
             advance website that motivate me . Also, I like pushing myself and
             taking up new challenges.
           </p>
-          <p className="mb-1">
-            <i class="fa fa-home text-blue-700" aria-hidden="true"></i>
+          <p className="mb-1 flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-blue-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
             <span className="pl-2 text-sm">New Ashok Nagar, Delhi 110096</span>
           </p>
-          <p className="mb-4">
-            <i class="fa fa-envelope text-blue-700" aria-hidden="true"></i>
+          <p className="mb-4 flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+</svg>
             <span className="pl-3">iabhishekn98@gmail.com</span>
           </p>
-          <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-12 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              <a href="../public/iabhi.pdf" download="iabhi">
-                {" "}
-                pdf
+          <div className="flex justify-center mb-5">
+            <button className=" text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <a
+                href="/iabhi.pdf"
+                download="iabhi"
+                className="flex justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+                <span className="pl-1">resume</span>
               </a>
             </button>
-            <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
-              Button
-            </button>
+            
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-full shadow-2xl">
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            height='100%'
-            width='100%'
+            height="100%"
+            width="100%"
             style={{
               transform:
                 "scale(1) perspective(1040px) rotateY(9deg) rotateX(1deg) rotate(1deg)",

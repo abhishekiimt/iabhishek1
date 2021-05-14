@@ -1,32 +1,83 @@
-
 import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [active, setActive] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const handleClick = () => {
+    setActive(!active);
+  };
 
   return (
-    <>
-      <div className="bg-gradient-to-r from-gray-700 to-gray-500 text-white fixed z-10 w-screen">
-        <nav role="navigation" className=" max-w-7xl mx-auto flex justify-between h-20 relative items-center transition duration-700 ease-in-out">
-          <a href="#" className="pl-6 text-4xl font-semibold text-blue-50">iabhishek</a>
-          <div className="px-4 cursor-pointer md:hidden" onClick={showSidebar}>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+    <div className=" bg-gray-800 p-3 h-20 fixed w-screen z-10">
+      <nav className="flex items-center flex-wrap max-w-7xl mx-auto">
+        <Link href="/">
+          <a className="inline-flex items-center p-2 mr-4 ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current text-white h-8 w-8 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
             </svg>
+
+            <span className="text-2xl text-white font-bold tracking-wide">
+              iAbhishek
+            </span>
+          </a>
+        </Link>
+        <button
+          className=" inline-flex p-3 hover:bg-blue-900 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
+          onClick={handleClick}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
+        <div
+          className={`${
+            active ? "" : "hidden"
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+        >
+          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+            <Link href="/">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-900 hover:text-white ">
+                Home
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-900 hover:text-white">
+                Projects
+              </a>
+            </Link>
+            <Link href="#about">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-900 hover:text-white">
+                About us
+              </a>
+            </Link>
           </div>
-          {/* className="hidden md:block" */}
-          <div className={sidebar ? "flex flex-col text-center bg-gray-600 w-full absolute top-20 " : "hidden md:block"} onClick={showSidebar}>
-            <a href="#" className="p-4">Home</a>
-            <a href="#" className="p-4">About</a>
-            <a href="#" className="p-4">Content</a>
-            <a href="#" className="p-4">Services</a>
-          </div>
-        </nav>
-      </div>
-    </>
+        </div>
+      </nav>
+    </div>
   );
 };
 
