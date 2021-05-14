@@ -15,7 +15,7 @@ const Hero = () => {
             advance website that motivate me . Also, I like pushing myself and
             taking up new challenges.
           </p>
-          
+          {/* 
           <p className="mb-1 flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,32 @@ const Hero = () => {
             </svg>
             <span className="pl-3">iabhishekn98@gmail.com</span>
           </p>
-          
+          */}
+          <div className="flex justify-center">
+            <button className=" text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <a
+                href="/iabhi.pdf"
+                download="iabhi"
+                className="flex justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+                <span className="pl-1">resume</span>
+              </a>
+            </button>
+          </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-full shadow-2xl">
           <img
@@ -65,7 +90,6 @@ const Hero = () => {
             }}
             src="/iabhishek.jpg"
           />
-          <div className="m-4 p-10 bg-gray-800"></div>
         </div>
       </div>
     </section>
