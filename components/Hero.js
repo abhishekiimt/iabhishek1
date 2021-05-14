@@ -15,6 +15,7 @@ const Hero = () => {
             advance website that motivate me . Also, I like pushing myself and
             taking up new challenges.
           </p>
+          {/* 
           <p className="mb-1 flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +33,7 @@ const Hero = () => {
             </svg>
             <span className="pl-2">New Ashok Nagar, Delhi 110096</span>
           </p>
+           
           <p className="mb-4 flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +51,7 @@ const Hero = () => {
             </svg>
             <span className="pl-3">iabhishekn98@gmail.com</span>
           </p>
+          */}
           <div className="flex justify-center">
             <button className=" text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               <a
